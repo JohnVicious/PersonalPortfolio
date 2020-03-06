@@ -19,24 +19,22 @@
 	<script src="{{ asset('/js/app.js') }}"></script>
 	
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom shadow">
-		<div class="container">		
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-	  		</button>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-	        		<ul class="navbar-nav mr-auto text-md font-weight-bold">
-	      				<li class="nav-item {{ Request::is('/') ? 'active' : '' }}">
-						<a class="nav-link mx-3" href="{{ url('/') }}">Home</a>
-	      				</li>
-	     				<li class="nav-item {{ Request::is('aboutMe') ? 'active' : '' }}">
-						<a class="nav-link mx-3" href="{{ url('/aboutMe') }}">About Me</a>
-	     				</li>
-	     				<li class="nav-item {{ Request::is('portfolio') ? 'active' : '' }}">
-						<a class="nav-link mx-3" href="{{ url('/portfolio') }}">Portfolio</a>
-	     				</li>	     
-	    			</ul>
-			</div>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto text-md font-weight-bold">
+				<li class="nav-item {{ Request::is('/') ? 'active' : '' }}">
+					<a class="nav-link mx-3" href="{{ url('/') }}">Home</a>
+				</li>
+				<li class="nav-item {{ Request::is('aboutMe') ? 'active' : '' }}">
+					<a class="nav-link mx-3" href="{{ url('/aboutMe') }}">About Me</a>
+				</li>
+				<li class="nav-item {{ Request::is('portfolio') ? 'active' : '' }}">
+					<a class="nav-link mx-3" href="{{ url('/portfolio') }}">Portfolio</a>
+				</li>	     
+			</ul>
 		</div>
 	</nav>
 
