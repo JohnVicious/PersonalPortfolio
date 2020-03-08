@@ -67,7 +67,7 @@ Once started, navigate to http://localhost:8000 to view the site.
 
 ## Authors
 
-* **John Klein** - *Initial work*
+* **John Klein** - https://github.com/JohnVicious
 
 ## License
 
