@@ -15,7 +15,7 @@ In order to run the site, your server will need to support Laravel 6.x. You will
 
 ### Prerequisites
 
-What things you need to install/compile to run the site and how to install them
+What is needed to install/compile in order to run the site and how to install them
 
 * [Composer](https://getcomposer.org/download/) - Dependency Manager for PHP
 * [NPM](https://nodejs.org/en/) - Package manager for JS libraries
@@ -57,6 +57,8 @@ In order to deploy the site, navigate to the root folder and run the following c
 ```
 php artisan serve
 ```
+
+Once started, navigate to http://localhost:8000 to view the site.
 
 ## Built With
 
