@@ -78,4 +78,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 I plan on adding additional projects to my portfolio in the future as submodules and linking to them from my projects page. As I include them, I will list them here.
 
 Current projects:
+
 *Portfolio Website
