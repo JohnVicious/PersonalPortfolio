@@ -63,7 +63,7 @@ Once started, navigate to http://localhost:8000 to view the site.
 ## Built With
 
 * [Larvel](https://laravel.com/docs/6.x/installation) - PHP framework
-* [Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/) - Styling frameworkn this repository](https://github.com/your/project/tags). 
+* [Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/) - Styling framework
 
 ## Authors
 
