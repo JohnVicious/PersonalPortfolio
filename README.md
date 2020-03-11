@@ -8,9 +8,14 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Server Requirements
 
-In order to run the site, your server will need to support Laravel 6.x. You will need to be able to run PHP and MySQL. Using a AMPP stack will suffice.
+In order to run the site, your server will need to support Laravel 6.x. You will need to be able to run the following:
 
-* [Larvel](https://laravel.com/docs/6.x/installation) - PHP framework
+* Apache
+* MySQL - Built with MariaDB
+* PHP
+
+For easier setup, XAMPP is an all in one development stack for windows that will work.
+
 * [XAMPP](https://www.apachefriends.org/download.html) - Apache distribution containing MariaDB, PHP, and Perl
 
 ### Prerequisites
