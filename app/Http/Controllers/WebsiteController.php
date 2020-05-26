@@ -68,14 +68,16 @@ class WebsiteController extends Controller
 							'Maya *',
 							'Notepad++ ***',
 							'Slack/Hipchat ***',
+							'RocketChat ***',
 							'Trello ***',
 							'Wrike ***',
 							'Word ***',
 							'Excel ***',
 							'PowerPoint **',
 							'Putty **',
-							'GitHub **',
+							'GitHub ***',
 							'TortoiseSVN ***',
+							'VIM *',
 							'Windows & Linux OS ***',
 							'Visual Studio Code ***'),
 
@@ -93,14 +95,17 @@ class WebsiteController extends Controller
 							'ActionScript ***'),
 
 					'Packages & Frameworks'=>
-						array('DotEnv ***',
+						array('Apache **',
+						    'DotEnv ***',
 							'Composer **',
 							'Laravel **',
 							'React *',
+							'React **',
 							'CreateJS **',
 							'PHPUnit **',
 							'JQuery **',
 							'NPM **',
+							'NodeJS *',
 							'Git *'),
 
 					'Interests'=>
