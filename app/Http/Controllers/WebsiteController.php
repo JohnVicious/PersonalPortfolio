@@ -39,14 +39,15 @@ class WebsiteController extends Controller
 
 	public function portfolio()
 	{
-		$projects = DB::select('SELECT snapshot, description, url FROM projects');
+		$projects = DB::select('SELECT snapshot, description, url, github FROM projects');
 
 		$projectsArray = array();
 		foreach($projects as $project){
 			$projectsArray[] = array(
 				'snapshot'=>$project->snapshot,
 				'description'=>$project->description,
-				'url'=>$project->url);
+				'url'=>$project->url,
+				'github'=>$project->github);
 		}
 
 		return view('portfolio')->with(['projects'=>$projectsArray]);

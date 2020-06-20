@@ -10922,3 +10922,8 @@ li {
   color: grey;
 }
 
+.card-container {
+  max-width: 350px;
+  min-width: 300px;
+}
+

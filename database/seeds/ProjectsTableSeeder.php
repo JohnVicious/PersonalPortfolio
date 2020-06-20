@@ -14,13 +14,15 @@ class ProjectsTableSeeder extends Seeder
         DB::table('projects')->insert([
             'snapshot'=>'resumeSiteSnapshot.png',
             'description'=>'My first project in my portfolio, my resume site. Built from the ground up to showcase myself, skillset, and projects.',
-            'url'=>'/'
+            'url'=>'/',
+			'github'=>'https://github.com/JohnVicious/PersonalPortfolio'
         ]);
 		
         DB::table('projects')->insert([
             'snapshot'=>'assetViewerSnapshot.png',
             'description'=>'An Asset Viewer that I originally made to test PHP Imagick in my spare time. Eventually adapted it to be used at my work in order to help developers and clinical staff view our custom made assets quickly and efficiently.',
-            'url'=>'/AssetViewer'
+            'url'=>'/AssetViewer',
+			'github'=>null
         ]);
     }
 }

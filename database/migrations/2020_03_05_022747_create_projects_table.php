@@ -18,6 +18,7 @@ class CreateProjectsTable extends Migration
             $table->string('snapshot');
             $table->string('description');
             $table->string('url');
+            $table->string('github')->nullable();
             $table->timestamps();
         });
     }
