@@ -107,7 +107,9 @@ class WebsiteController extends Controller
 							'JQuery **',
 							'NPM **',
 							'NodeJS *',
-							'Git *'),
+							'Git *',
+							'VueJS *',
+							'Vue-Native *'),
 
 					'Interests'=>
 						array('PC Building',
