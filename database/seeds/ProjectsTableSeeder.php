@@ -29,7 +29,7 @@ class ProjectsTableSeeder extends Seeder
             'snapshot'=>'recipeJournalSnapshot.png',
             'description'=>'A Vue-Native application created for my favorite recipes.',
             'url'=>'/recipeJournal',
-			'github'=>https://github.com/JohnVicious/RecipeJournal
+			'github'=>'https://github.com/JohnVicious/RecipeJournal'
         ]);
     }
 }
