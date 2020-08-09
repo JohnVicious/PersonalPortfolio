@@ -14,3 +14,4 @@
 Route::get('/','WebsiteController@index');
 Route::get('portfolio','WebsiteController@portfolio');
 Route::get('aboutMe','WebsiteController@aboutMe');
+Route::get('recipeJournal','WebsiteController@recipeJournal');

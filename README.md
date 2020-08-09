@@ -1,4 +1,4 @@
-# Project Title
+# Personal Portfolio
 
 My personal portfolio website made using the Laravel 6.x framework and Bootstrap 4.x.
 
@@ -72,7 +72,7 @@ Once started, navigate to http://localhost:8000 to view the site.
 
 ## Authors
 
-* **John Klein** - https://github.com/JohnVicious
+* **John Klein** - https://github.com/JohnVicious - https://www.johnklein.dev
 
 ## License
 

@@ -127,6 +127,11 @@ class WebsiteController extends Controller
 		return view('aboutMe')->with(['aboutSections'=>$aboutSections]);
 	}
 
+	public function recipeJournal()
+	{
+		return view('recipeJournal');
+	}
+
 
 	private function compareWorkTime($startDate,$endDate)
 	{
