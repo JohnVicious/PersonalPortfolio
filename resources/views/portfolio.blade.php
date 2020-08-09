@@ -1,12 +1,30 @@
 @extends('container')
 
+@section('page_description')
+
+    {{ "John Klein's portfolio of personal projects implemented. All code hosted on github in either public or private repositories." }}
+	
+@endsection
+
+@section('page_keywords')
+
+    {{ "John,Klein,Developer,Portfolio,Personal" }}
+	
+@endsection
+
+@section('page_title')
+
+    {{ "Projects Portfolio" }}
+	
+@endsection
+
 @section('content')
 
 <main role="main">
 	
 	<div class="container mt-4">
 		<div class="col-md-12">
-			<h2>Project Portfolio</h2>
+			<h1>Project Portfolio</h1>
 			<hr />
 		</div>
 	</div>

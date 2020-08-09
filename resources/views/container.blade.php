@@ -4,9 +4,10 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="csrf-token" content="{{ csrf_token() }}">
-		<meta name="description" content="John Klein Full Stack Web Developer personal portfolio.">
+		<meta name="description" content="@yield('page_description','John Klein is a Full Stack Web Developer who graduated with a Bachelor of Science in Informatics as the University of Louisiana at Lafayette.')">
+		<meta name="keywords" content="@yield('page_keywords','John,Klein,Full Stack,Web Developer,Personal Site')">
 
-        <title>Resume Website</title>
+        <title>@yield('page_title','Resume Website')</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">

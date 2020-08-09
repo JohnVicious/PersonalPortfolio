@@ -13,7 +13,7 @@
 				</div>			
 				<div class="col-md-4">
 					<div class="text-center">
-						<img src="{{ asset('assets/JohnKlein.jpg') }}" class="rounded-circle border-bottom shadow" />
+						<img src="{{ asset('assets/JohnKlein.jpg') }}" class="rounded-circle border-bottom shadow" alt="Profile picture for John Klein."/>
 					</div>
 				</div>
 			</div>

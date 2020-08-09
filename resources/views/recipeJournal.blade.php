@@ -1,12 +1,30 @@
 @extends('container')
 
+@section('page_description')
+
+    {{ "John Klein's Recipe Journal application made using VueNative and Expo. Android apk available for download and installation." }}
+	
+@endsection
+
+@section('page_keywords')
+
+    {{ "John,Klein,Developer,Recipe Journal, VueNative, Expo, Android, APK" }}
+	
+@endsection
+
+@section('page_title')
+
+    {{ "Recipe Journal" }}
+	
+@endsection
+
 @section('content')
 
 <main role="main">
 	
 	<div class="container mt-4">
 		<div class="col-md-12">
-			<h2>Recipe Journal</h2>
+			<h1>Recipe Journal</h1>
 			<hr />
 		</div>
 	</div>
@@ -27,7 +45,7 @@
 	<div class="container mt-2">
 		<div class="row">
 			<div class="col-md-3 text-center mb-4">
-				<img src="{{ asset('assets/recipeJournal/appGif.gif') }}" class="border-bottom shadow w-75" />
+				<img src="{{ asset('assets/recipeJournal/appGif.gif') }}" class="border-bottom shadow w-75" alt="Recipe Journal gif showing application on android."/>
 			</div>
 			<div class="col-md-9 mt-2">
 				<p class="text-md indent">I created the recipe journal using Vue Native, and decided to go this route because Vue Native is an emerging framework for applications written using VueJS. 
@@ -49,9 +67,9 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 text-center">
-				<img src="{{ asset('assets/recipeJournal/app1.png') }}" class="border-bottom shadow w-25" />
-				<img src="{{ asset('assets/recipeJournal/app2.png') }}" class="border-bottom shadow w-25" />
-				<img src="{{ asset('assets/recipeJournal/app3.png') }}" class="border-bottom shadow w-25" />
+				<img src="{{ asset('assets/recipeJournal/app1.png') }}" class="border-bottom shadow w-25" alt="Recipe Journal application screenshot showing main page."/>
+				<img src="{{ asset('assets/recipeJournal/app2.png') }}" class="border-bottom shadow w-25" alt="Recipe Journal application screenshot showing recipe landing page."/>
+				<img src="{{ asset('assets/recipeJournal/app3.png') }}" class="border-bottom shadow w-25" alt="Recipe Journal application screenshot showing recipe information page."/>
 			</div>
 		</div>
 	</div>
