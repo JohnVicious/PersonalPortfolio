@@ -24,5 +24,12 @@ class ProjectsTableSeeder extends Seeder
             'url'=>'/AssetViewer',
 			'github'=>null
         ]);
+		
+        DB::table('projects')->insert([
+            'snapshot'=>'recipeJournalSnapshot.png',
+            'description'=>'A Vue-Native application created for my favorite recipes.',
+            'url'=>'/recipeJournal',
+			'github'=>https://github.com/JohnVicious/RecipeJournal
+        ]);
     }
 }
