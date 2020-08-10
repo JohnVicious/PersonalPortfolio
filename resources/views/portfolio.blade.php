@@ -8,7 +8,7 @@
 
 @section('page_keywords')
 
-    {{ "John,Klein,Developer,Portfolio,Personal" }}
+    {{ "Projects,Portfolio,John,Klein,Developer,Personal" }}
 	
 @endsection
 

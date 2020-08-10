@@ -8,7 +8,7 @@
 
 @section('page_keywords')
 
-    {{ "John,Klein,Developer,Recipe Journal, VueNative, Expo, Android, APK" }}
+    {{ "Recipe Journal,John,Klein,Developer, VueNative, Expo, Android, APK" }}
 	
 @endsection
 

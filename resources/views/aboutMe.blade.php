@@ -8,7 +8,7 @@
 
 @section('page_keywords')
 
-    {{ "John,Klein,Developer,Education,Work Skills,Languages,Frameworks" }}
+    {{ "About Me,John,Klein,Developer,Education,Work Skills,Languages,Frameworks" }}
 	
 @endsection
 
