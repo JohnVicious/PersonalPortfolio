@@ -14,7 +14,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="csrf-token" content="{{ csrf_token() }}">
-		<meta name="description" content="@yield('page_description','John Klein is a Full Stack Web Developer who graduated with a Bachelor of Science in Informatics as the University of Louisiana at Lafayette.')">
+		<meta name="description" content="@yield('page_description','John Klein is a Full Stack Web Developer who graduated with a Bachelor of Science in Informatics at the University of Louisiana at Lafayette.')">
 		<meta name="keywords" content="@yield('page_keywords','John,Klein,Full Stack,Web Developer,Personal Site')">
 
         <title>@yield('page_title','Resume Website')</title>
