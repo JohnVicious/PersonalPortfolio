@@ -58,7 +58,7 @@
     <footer>	
 	<div class="navbar fixed-bottom bg-white">
 	<div class='text-muted'>
-		Built from the ground up using the Laravel Framework 6.17 & Bootstrap 4 | Copyright - John Klein - {{ date('Y') }} | <a href="https://github.com/JohnVicious/PersonalPortfolio">GitHub</a> | <a href="https://www.linkedin.com/in/john-klein-37b28212/">LinkedIn</a>
+		Built from the ground up using the Laravel Framework 6.17 & Bootstrap 4 | Copyright - John Klein - {{ date('Y') }} | <a href="https://github.com/JohnVicious/PersonalPortfolio">GitHub</a> | <a href="https://www.linkedin.com/in/johnkleindeveloper/">LinkedIn</a>
 	</div>	
 	</div>
     </footer>
