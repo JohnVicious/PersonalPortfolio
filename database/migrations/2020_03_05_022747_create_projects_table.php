@@ -19,6 +19,7 @@ class CreateProjectsTable extends Migration
             $table->string('description');
             $table->string('url');
             $table->string('github')->nullable();
+            $table->boolean('active')->default(1);
             $table->timestamps();
         });
     }

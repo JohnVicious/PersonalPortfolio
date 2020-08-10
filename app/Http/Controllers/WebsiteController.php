@@ -39,7 +39,7 @@ class WebsiteController extends Controller
 
 	public function portfolio()
 	{
-		$projects = DB::select('SELECT snapshot, description, url, github FROM projects');
+		$projects = DB::select('SELECT snapshot, description, url, github FROM projects WHERE active = 1');
 
 		$projectsArray = array();
 		foreach($projects as $project){
