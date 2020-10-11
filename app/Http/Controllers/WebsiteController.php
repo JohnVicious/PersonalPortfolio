@@ -21,20 +21,23 @@ class WebsiteController extends Controller
 	public function index()
 	{
 		$aboutMeText = Storage::get('aboutMe.txt');
+		$educations = [];
 
-		$experiences = DB::select('SELECT title, company, description, startDate, endDate FROM experiences ORDER BY startDate Desc');
-		$experiencesArray = array();
-		foreach($experiences as $experience){
-			$experiencesArray[] = array(
-				'title'=>$experience->title,
-				'company'=>$experience->company,
-				'description'=>$experience->description,
-				'startDate'=>date('m/d/Y',strtotime($experience->startDate)),
-				'endDate'=>($experience->endDate == null ? '' : date('m/d/Y',strtotime($experience->endDate))),
-				'timeWorked'=>$this->compareWorkTime($experience->startDate,$experience->endDate));
-		}
+		//College
+		$educations[] = [
+			'degree'=>'Bachelor of Science, School of Computing & Informatics, Ray P Authment College of Sciences',
+			'location'=>'University of Louisiana at Lafayette, Louisiana',
+			'year'=>'2014'
+		];
 
-		return view('index')->with(['aboutMeText'=>$aboutMeText,'experiences'=>$experiencesArray]);
+		//Highschool
+		$educations[] = [
+			'degree'=>'High School Diploma',
+			'location'=>'Hahnville High School, Louisiana',
+			'year'=>'2009'
+		];
+
+		return view('index')->with(['aboutMeText'=>$aboutMeText,'educations'=>$educations]);
 	}
 
 	public function portfolio()
@@ -55,75 +58,98 @@ class WebsiteController extends Controller
 
 	public function aboutMe()
 	{
-		$aboutSections = array('Education'=>
-						array('Bachelor of Science, School of Computing & Informatics, Ray P Authement College of Sciences<br/>
-							University of Louisiana at Lafayette, Louisiana <i>(2014)</i>'),
+		$aboutSections = [];
 
-					'Work Skills & Programs'=>
-						array('Photoshop ***',
-							'Flash ***',
-							'Illustrator **',
-							'Flash ***',
-							'InDesign *',
-							'AfterEffects *',
-							'Maya *',
-							'Notepad++ ***',
-							'Slack/Hipchat ***',
-							'RocketChat ***',
-							'Trello ***',
-							'Wrike ***',
-							'Word ***',
-							'Excel ***',
-							'PowerPoint **',
-							'Putty **',
-							'GitHub ***',
-							'TortoiseSVN ***',
-							'VIM *',
-							'Windows & Linux OS ***',
-							'Visual Studio Code ***'),
+		$experiences = DB::select('SELECT title, company, description, startDate, endDate FROM experiences ORDER BY startDate Desc');
+		$experiencesArray = array();
+		foreach($experiences as $experience){
+			$experiencesArray[] = array(
+				'title'=>$experience->title,
+				'company'=>$experience->company,
+				'description'=>$experience->description,
+				'startDate'=>date('m/d/Y',strtotime($experience->startDate)),
+				'endDate'=>($experience->endDate == null ? '' : date('m/d/Y',strtotime($experience->endDate))),
+				'timeWorked'=>$this->compareWorkTime($experience->startDate,$experience->endDate));
+		}
+		$aboutSections['Work Experience'] = $experiencesArray;
+		
+		$languages = [
+			'PHP ***',
+			'MySQL ***',
+			'HTML **',
+			'SCSS / CSS **',
+			'Javascript **',
+			'Python *',
+			'Java *',
+			'C++ *',
+			'C# *',
+			'R *',
+			'ActionScript ***'];
+		sort($languages);
+		$aboutSections['Languages'] = $languages;
 
-					'Languages'=>
-						array('PHP ***',
-							'MySQL ***',
-							'HTML **',
-							'SCSS / CSS **',
-							'Javascript **',
-							'Python *',
-							'Java *',
-							'C++ *',
-							'C# *',
-							'R *',
-							'ActionScript ***'),
+		$packagesAndFrameworks = [
+			'Apache **',
+			'DotEnv ***',
+			'Composer **',
+			'Laravel **',
+			'React **',
+			'CreateJS **',
+			'PHPUnit **',
+			'JQuery **',
+			'NodeJS **',
+			'Git *',
+			'VueJS **',
+			'Vue-Native *'];
+		sort($packagesAndFrameworks);
+		$aboutSections['Packages & Frameworks'] = $packagesAndFrameworks;
+		
+		$programsAndSites = [
+			'Photoshop ***',
+			'Flash ***',
+			'Illustrator **',
+			'Flash ***',
+			'InDesign *',
+			'AfterEffects *',
+			'Maya *',
+			'Notepad++ ***',
+			'Slack/Hipchat ***',
+			'RocketChat ***',
+			'Trello ***',
+			'Wrike ***',
+			'Word ***',
+			'Excel ***',
+			'PowerPoint **',
+			'Putty **',
+			'GitHub ***',
+			'TortoiseSVN ***',
+			'VIM *',
+			'Windows & Linux OS ***',
+			'Notepad++ ***',
+			'Visual Studio Code ***'];
+		sort($programsAndSites);
+		$aboutSections['Programs & Sites'] = $programsAndSites;
 
-					'Packages & Frameworks'=>
-						array('Apache **',
-						    'DotEnv ***',
-							'Composer **',
-							'Laravel **',
-							'React *',
-							'React **',
-							'CreateJS **',
-							'PHPUnit **',
-							'JQuery **',
-							'NPM **',
-							'NodeJS *',
-							'Git *',
-							'VueJS *',
-							'Vue-Native *'),
-
-					'Interests'=>
-						array('PC Building',
-							'Board games',
-							'Programming',
-							'RC Pilot',
-							'Video games',
-							'Magic TCG',
-							'Snow sports',
-							'Mountain hiking',
-							'Dogs (Currently a Corgi Dad)',
-							'Cooking')
-					);
-
+		$aboutSections['Publication'] = [
+			'<strong>Training and Certifying Users of the National Institutes of Health Stroke Scale</strong><br/>
+			Authors: Ariana Anderson, John Klein, Brian White, Marianne Bourgeois, Anne Leonard, Al Pacino, John Hill, Patrick Lyden<br/>
+			Publication Date: January 28th, 2020<br/>
+			Link: <a href="https://www.ahajournals.org/doi/abs/10.1161/STROKEAHA.119.027234">AHA Journal Publication</a>'
+		];
+		
+		$interest = [
+			'PC Building',
+			'Board games',
+			'Programming',
+			'RC Pilot',
+			'Video games',
+			'Snow sports',
+			'Mountain hiking',
+			'Dogs (Currently a Corgi Dad)',
+			'Cooking'];
+		sort($interest);
+		$aboutSections['Interests'] = $interest;
+		
 		return view('aboutMe')->with(['aboutSections'=>$aboutSections]);
 	}
 

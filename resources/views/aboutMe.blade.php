@@ -27,21 +27,42 @@
 			<div class="col-md-12 mb-3">
 				<h1>{{ $title }}</h1>	
 
-				@switch($title)
-					@case('Education')
-						<ul>	
-						@break;
-					@default						
-						<ul class="sideBySide">
-				@endswitch
+				@if($title == 'Work Experience')
 
-						@foreach($content as $cont)
-							<li>{!! $cont !!}</li>
-						@endforeach
+					@foreach($content as $experience)
+
+						<ul>
+							<p class="text-md m-0"><strong>{{ $experience['company'] }}</strong> : {{ $experience['startDate'] }} - {{ ($experience['endDate'] == '' ? 'Present' : $experience['endDate']) }}<span class="text-sm"> ({{ $experience['timeWorked'] }})</span></p>
+							<p class="text-md ">{{ $experience['title'] }}</p>						
+							<p class="text-md m-0">{{ $experience['description'] }}</p>	
+
+						@if(!$loop->last)
+							<hr/>
+						@endif
 						
-						</ul>			
-													
-					<hr class="mt-4"/>
+						</ul>
+
+					@endforeach
+
+				@else
+
+					@switch($title)
+						@case('Publication')
+							<ul>	
+							@break;
+						@default						
+							<ul class="sideBySide">
+					@endswitch
+
+							@foreach($content as $cont)
+								<li>{!! $cont !!}</li>
+							@endforeach
+							
+							</ul>			
+											
+				@endif		
+
+				<hr class="mt-4"/>
 
 				@if($loop->last)
 					<p class="indent denote"><i>* - *** : Denotes the amount of experience I have.</i></p>	

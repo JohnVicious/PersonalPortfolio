@@ -7,7 +7,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8">
-					<h1 class="text-center">John Klein - B.S. Informatics</h1>
+					<h1 class="text-center">John Klein - Full Stack Developer</h1>
 					<hr class="w-75" />
 					<p class="text-md indent">{{ $aboutMeText }}</p>
 				</div>			
@@ -22,14 +22,13 @@
 	<div class="container pb-4">
 		<div class="row">
 			<div class="col-md-12">
-				<h2>Work Experience</h2>
+				<h2>Education</h2>
 				<br/>
-				@foreach($experiences as $experience)
+				@foreach($educations as $education)
 
 					<div>
-						<p class="text-md m-0"><strong>{{ $experience['company'] }}</strong> : {{ $experience['startDate'] }} - {{ ($experience['endDate'] == '' ? 'Present' : $experience['endDate']) }}<span class="text-sm"> ({{ $experience['timeWorked'] }})</span></p>
-						<p class="text-md ">{{ $experience['title'] }}</p>						
-						<p class="text-md m-0">{{ $experience['description'] }}</p>	
+						<p class="text-md m-0"><strong>{{ $education['degree'] }}</strong></p>
+						<p class="text-md ">{{ $education['location'] }} <i>({{ $education['year'] }})</i></p>
 					<div>
 				
 					@if(!$loop->last)
