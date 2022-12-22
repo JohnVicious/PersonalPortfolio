@@ -131,7 +131,7 @@ class WebsiteController extends Controller
 		sort($programsAndSites);
 		$aboutSections['Programs & Sites'] = $programsAndSites;
 
-		$aboutSections['Publication'] = [
+		$aboutSections['Publications'] = [
 			'<strong>Training and Certifying Users of the National Institutes of Health Stroke Scale</strong><br/>
 			Authors: Ariana Anderson, John Klein, Brian White, Marianne Bourgeois, Anne Leonard, Al Pacino, John Hill, Patrick Lyden<br/>
 			Publication Date: January 28th, 2020<br/>

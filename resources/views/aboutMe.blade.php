@@ -55,7 +55,7 @@
 					@endswitch
 
 							@foreach($content as $cont)
-								<li class="mb-2">{!! $cont !!}</li>
+								<li class="mb-4">{!! $cont !!}</li>
 							@endforeach
 							
 							</ul>			
