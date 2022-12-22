@@ -135,7 +135,11 @@ class WebsiteController extends Controller
 			'<strong>Training and Certifying Users of the National Institutes of Health Stroke Scale</strong><br/>
 			Authors: Ariana Anderson, John Klein, Brian White, Marianne Bourgeois, Anne Leonard, Al Pacino, John Hill, Patrick Lyden<br/>
 			Publication Date: January 28th, 2020<br/>
-			Link: <a href="https://www.ahajournals.org/doi/abs/10.1161/STROKEAHA.119.027234">AHA Journal Publication</a>'
+			Link: <a href="https://www.ahajournals.org/doi/abs/10.1161/STROKEAHA.119.027234">AHA Journal Publication</a>',
+			'<strong>Interactive Sepsis Education Program Improves Nurses\' Knowledge and Impact on Patient Outcome</strong><br/>
+			Authors: ennifer L. Rechter, Rachel M. Buckholz, Emily R. Plant, John P. Klein, and Jan Powers<br/>
+			Publication Date: November-December issue, 2022<br/>
+			Link: <a href="http://www.medsurgnursing.net/cgi-bin/WebObjects/MSNJournal.woa/wa/viewSection?s_id=1073744496">MEDSURGE Nursing Publication</a>',
 		];
 		
 		$interest = [
