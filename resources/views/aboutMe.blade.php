@@ -46,19 +46,21 @@
 
 				@else
 
-					@switch($title)
-						@case('Publication')
-							<ul>	
-							@break;
-						@default						
-							<ul class="sideBySide">
-					@endswitch
+					@if($title == 'Publications')
+						<ul>
+						@foreach($content as $cont)
+							<li class="mb-4">{!! $cont !!}</li>
+						@endforeach
+					
+					@else
+						<ul class="sideBySide">
+						@foreach($content as $cont)
+							<li>{!! $cont !!}</li>
+						@endforeach
+						
+					@endif
 
-							@foreach($content as $cont)
-								<li>{!! $cont !!}</li>
-							@endforeach
-							
-							</ul>			
+					</ul>			
 											
 				@endif		
 
