@@ -64,7 +64,9 @@
 											
 				@endif		
 
-				<hr class="mt-4"/>			
+				@if(!$loop->last)
+					<hr class="mt-4"/>
+				@endif				
 			</div>		
 		</div>
 		@endforeach
