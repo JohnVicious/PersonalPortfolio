@@ -64,11 +64,7 @@
 											
 				@endif		
 
-				<hr class="mt-4"/>
-
-				@if($loop->last)
-					<p class="indent denote"><i>* - *** : Denotes the amount of experience I have.</i></p>	
-				@endif				
+				<hr class="mt-4"/>			
 			</div>		
 		</div>
 		@endforeach

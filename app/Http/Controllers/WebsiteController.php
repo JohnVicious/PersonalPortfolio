@@ -74,60 +74,60 @@ class WebsiteController extends Controller
 		$aboutSections['Work Experience'] = $experiencesArray;
 		
 		$languages = [
-			'PHP ***',
-			'MySQL ***',
-			'HTML ***',
-			'SCSS / CSS ***',
-			'Javascript ***',
-			'Python **',
-			'Java *',
-			'C++ *',
-			'C# *',
-			'R *',
-			'ActionScript ***'];
+			'PHP',
+			'MySQL',
+			'HTML',
+			'SCSS / CSS',
+			'Javascript',
+			'Python',
+			'Java',
+			'C++',
+			'C#',
+			'R',
+			'ActionScript'];
 		sort($languages);
 		$aboutSections['Languages'] = $languages;
 
 		$packagesAndFrameworks = [
-			'Apache **',
-			'DotEnv ***',
-			'Composer ***',
-			'Laravel ***',
-			'React **',
-			'CreateJS **',
-			'PHPUnit **',
-			'JQuery ***',
-			'NodeJS **',
-			'Git *',
-			'VueJS **',
-			'Vue-Native *'];
+			'Apache',
+			'DotEnv',
+			'Composer',
+			'Laravel',
+			'React',
+			'CreateJS',
+			'PHPUnit',
+			'JQuery',
+			'NodeJS',
+			'Git',
+			'VueJS',
+			'Vue-Native'];
 		sort($packagesAndFrameworks);
 		$aboutSections['Packages & Frameworks'] = $packagesAndFrameworks;
 		
 		$programsAndSites = [
-			'Photoshop ***',
-			'Flash ***',
-			'Illustrator **',
-			'Flash ***',
-			'InDesign *',
-			'AfterEffects *',
-			'Firebase **',
-			'Maya *',
-			'Notepad++ ***',
-			'Slack/Hipchat ***',
-			'RocketChat ***',
-			'Trello ***',
-			'Wrike ***',
-			'Word ***',
-			'Excel ***',
-			'PowerPoint **',
-			'Putty **',
-			'GitHub ***',
-			'TortoiseSVN ***',
-			'VIM *',
-			'Windows & Linux OS ***',
-			'Notepad++ ***',
-			'Visual Studio Code ***'];
+			'Photoshop',
+			'Flash',
+			'Illustrator',
+			'Flash',
+			'InDesign',
+			'AfterEffects',
+			'Firebase',
+			'Maya',
+			'Notepad++',
+			'Slack/Hipchat',
+			'RocketChat',
+			'Trello',
+			'Wrike',
+			'Word',
+			'Excel',
+			'PowerPoint',
+			'Putty',
+			'GitHub',
+			'TortoiseSVN',
+			'VIM',
+			'Windows & Linux OS',
+			'Notepad++',
+			'Visual Studio Code'];
 		sort($programsAndSites);
 		$aboutSections['Programs & Sites'] = $programsAndSites;
 
